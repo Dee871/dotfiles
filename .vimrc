@@ -104,15 +104,17 @@ set autoindent
 " 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 set smartindent
 " タブ文字の表示幅
-set tabstop=4
+set tabstop=2
 " Vimが挿入するインデントの幅
-set shiftwidth=4
+set shiftwidth=2
 " 行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする
 set smarttab
 " カーソルを行頭、行末で止まらないようにする
 set whichwrap=b,s,h,l,<,>,[,]
 "挿入モードでbackspaceが使えるようにする
 set backspace=start,eol,indent
+"vimでyankしたときにクリップボードに貼り付ける
+set clipboard=unnamed,autoselect
 " 構文毎に文字色を変化させる
 syntax on
 " カラースキーマの指定
